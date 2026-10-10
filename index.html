@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopwithiris | Fashion & Home Essentials</title>
+
+<meta name="description" content="Elevate your everyday style with Shopwithiris. Discover fashion, luxury footwear and lifestyle essentials. Contact us on WhatsApp to order.">
+
+<meta name="theme-color" content="#171612">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#171612;
+  --cream:#f8f6f1;
+  --white:#ffffff;
+  --gold:#b99a63;
+  --muted:#77756e;
+  --line:#e8e4dc;
+  --green:#176b43;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.6;
+}
+
+button,input,select,textarea{
+  font:inherit;
+}
+
+button,a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  cursor:pointer;
+}
+
+.announcement{
+  background:var(--ink);
+  color:#fff;
+  text-align:center;
+  padding:9px 12px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+header{
+  background:rgba(248,246,241,.96);
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+
+.nav{
+  max-width:1250px;
+  margin:auto;
+  min-height:83px;
+  padding:14px 5%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  font-family:'Playfair Display',serif;
+  font-size:29px;
+  font-weight:700;
+  letter-spacing:-1px;
+}
+
+.logo span{
+  color:var(--gold);
+}
+
+.nav-links{
+  display:flex;
+  gap:26px;
+  align-items:center;
+  font-size:13px;
+}
+
+.nav-links a:hover{
+  color:var(--gold);
+}
+
+.nav-cta{
+  background:var(--ink);
+  color:white;
+  border:none;
+  padding:12px 19px;
+  font-size:12px;
+  letter-spacing:.4px;
+}
+
+.menu-toggle{
+  display:none;
+  border:1px solid var(--line);
+  background:transparent;
+  padding:8px 12px;
+}
+
+.hero{
+  min-height:590px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:#e9e2d5;
+}
+
+.hero-copy{
+  padding:80px 9%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.eyebrow{
+  color:#866c3d;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+h1,h2,h3{
+  font-family:'Playfair Display',serif;
+  font-weight:500;
+}
+
+.hero h1{
+  font-size:clamp(42px,5.3vw,76px);
+  line-height:1.08;
+  letter-spacing:-2px;
+  max-width:570px;
+}
+
+.hero h1 em{
+  color:#94764a;
+  font-weight:500;
+}
+
+.hero-copy p{
+  max-width:430px;
+  color:#5e5b53;
+  margin:24px 0 28px;
+  font-size:14px;
+}
+
+.button-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 22px;
+  border:1px solid var(--ink);
+  font-size:12px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.btn-dark{
+  background:var(--ink);
+  color:white;
+}
+
+.btn-dark:hover{
+  background:#39372f;
+}
+
+.btn-outline{
+  background:transparent;
+}
+
+.btn-outline:hover{
+  background:white;
+}
+
+.hero-image{
+  min-height:420px;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.13)),
+    url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1300&q=85')
+    center/cover no-repeat;
+  position:relative;
+}
+
+.hero-label{
+  position:absolute;
+  right:25px;
+  bottom:25px;
+  background:rgba(255,255,255,.93);
+  padding:18px 22px;
+  max-width:220px;
+}
+
+.hero-label small{
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+.hero-label strong{
+  font-family:'Playfair Display',serif;
+  font-size:19px;
+  font-weight:500;
+}
+
+.benefits{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-bottom:1px solid var(--line);
+  background:#fff;
+}
+
+.benefit{
+  text-align:center;
+  padding:24px 10px;
+  border-right:1px solid var(--line);
+}
+
+.benefit:last-child{
+  border:0;
+}
+
+.benefit strong{
+  display:block;
+  font-size:12px;
+  letter-spacing:.4px;
+}
+
+.benefit span{
+  font-size:11px;
+  color:var(--muted);
+}
+
+.section{
+  max-width:1250px;
+  margin:auto;
+  padding:85px 5%;
+}
+
+.section-heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:20px;
+  margin-bottom:30px;
+}
+
+.section-heading h2{
+  font-size:clamp(32px,4vw,45px);
+  line-height:1.15;
+}
+
+.section-heading p{
+  color:var(--muted);
+  font-size:13px;
+  max-width:370px;
+}
+
+.filters{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-bottom:25px;
+}
+
+.filter-btn{
+  background:transparent;
+  border:1px solid #d8d3c9;
+  padding:10px 17px;
+  font-size:11px;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+  background:var(--ink);
+  color:white;
+  border-color:var(--ink);
+}
+
+.search-box{
+  width:100%;
+  max-width:360px;
+  border:1px solid var(--line);
+  background:white;
+  padding:13px 15px;
+  margin-bottom:25px;
+  outline:none;
+}
+
+.search-box:focus{
+  border-color:var(--gold);
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:25px;
+}
+
+.product-card{
+  background:white;
+  border:1px solid #efede7;
+  transition:transform .25s,box-shadow .25s;
+  overflow:hidden;
+}
+
+.product-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,.06);
+}
+
+.product-image{
+  height:330px;
+  background:#eeeae2;
+  position:relative;
+  overflow:hidden;
+}
+
+.product-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .5s;
+}
+
+.product-card:hover .product-image img{
+  transform:scale(1.04);
+}
+
+.product-tag{
+  position:absolute;
+  top:13px;
+  left:13px;
+  background:rgba(255,255,255,.95);
+  padding:7px 10px;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.product-info{
+  padding:20px;
+}
+
+.product-category{
+  color:#967b4d;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:1.7px;
+}
+
+.product-info h3{
+  font-size:22px;
+  margin:5px 0;
+}
+
+.product-description{
+  font-size:12px;
+  color:var(--muted);
+  min-height:40px;
+}
+
+.product-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:17px;
+  padding-top:15px;
+  border-top:1px solid var(--line);
+}
+
+.price{
+  font-size:15px;
+  font-weight:700;
+}
+
+.order-btn{
+  border:0;
+  background:var(--ink);
+  color:white;
+  padding:11px 13px;
+  font-size:11px;
+  font-weight:700;
+}
+
+.order-btn:hover{
+  background:#514b3d;
+}
+
+.no-products{
+  padding:35px;
+  text-align:center;
+  color:var(--muted);
+  grid-column:1/-1;
+}
+
+.story{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:#e9e2d5;
+}
+
+.story-image{
+  min-height:420px;
+  background:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85') center/cover;
+}
+
+.story-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  padding:65px 10%;
+}
+
+.story-copy h2{
+  font-size:clamp(34px,4vw,49px);
+  line-height:1.15;
+  margin-bottom:20px;
+}
+
+.story-copy p{
+  font-size:13px;
+  color:#625e55;
+  margin-bottom:25px;
+}
+
+.contact{
+  text-align:center;
+  background:var(--ink);
+  color:white;
+  padding:75px 5%;
+}
+
+.contact h2{
+  font-size:clamp(34px,5vw,52px);
+  margin-bottom:12px;
+}
+
+.contact p{
+  max-width:550px;
+  margin:0 auto 25px;
+  color:#c6c2b9;
+  font-size:13px;
+}
+
+.contact .btn{
+  border-color:#c8ab77;
+  background:#c8ab77;
+  color:#171612;
+}
+
+footer{
+  background:#11110f;
+  color:white;
+  padding:35px 5%;
+}
+
+.footer-inner{
+  max-width:1250px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  gap:25px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.footer-brand{
+  font-family:'Playfair Display',serif;
+  font-size:23px;
+}
+
+.footer-brand span{
+  color:var(--gold);
+}
+
+.footer-small{
+  font-size:11px;
+  color:#a8a59e;
+}
+
+.footer-links{
+  display:flex;
+  gap:18px;
+  font-size:11px;
+}
+
+.admin-launch{
+  display:block;
+  text-align:center;
+  padding:12px;
+  background:#11110f;
+  color:#85837d;
+  font-size:10px;
+  border-top:1px solid #292822;
+}
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:500;
+  background:rgba(0,0,0,.72);
+  padding:18px;
+  align-items:center;
+  justify-content:center;
+}
+
+.modal.open{
+  display:flex;
+}
+
+.modal-panel{
+  background:#fff;
+  width:100%;
+  max-width:600px;
+  max-height:90vh;
+  overflow:auto;
+  padding:28px;
+  position:relative;
+}
+
+.modal-panel h2{
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.modal-panel p{
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:20px;
+}
+
+.close-modal{
+  position:absolute;
+  top:13px;
+  right:15px;
+  background:none;
+  border:0;
+  font-size:25px;
+}
+
+.form-group{
+  margin-bottom:15px;
+}
+
+.form-group label{
+  display:block;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  border:1px solid var(--line);
+  padding:12px;
+  background:#fff;
+  outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:var(--gold);
+}
+
+.form-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+
+.form-actions button{
+  padding:12px 17px;
+  border:1px solid var(--ink);
+  background:var(--ink);
+  color:white;
+}
+
+.form-actions .secondary{
+  background:white;
+  color:var(--ink);
+}
+
+.admin-products{
+  margin-top:25px;
+}
+
+.admin-product{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+  font-size:12px;
+}
+
+.delete-btn{
+  background:#fff0f0;
+  border:1px solid #e4b8b8;
+  color:#9d2929;
+  padding:7px 10px;
+  font-size:11px;
+}
+
+.notice{
+  font-size:11px;
+  color:#9d2929;
+  background:#fff3f0;
+  padding:12px;
+  margin:15px 0;
+}
+
+.toast{
+  position:fixed;
+  bottom:22px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--ink);
+  color:white;
+  padding:13px 20px;
+  z-index:800;
+  font-size:12px;
+  display:none;
+  max-width:90%;
+  text-align:center;
+}
+
+.toast.show{
+  display:block;
+}
+
+@media(max-width:800px){
+  .nav{
+    min-height:70px;
+  }
+
+  .logo{
+    font-size:25px;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    padding:22px 5%;
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+    flex-direction:column;
+    align-items:stretch;
+    gap:18px;
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-cta{
+    text-align:center;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .hero-copy{
+    padding:60px 7%;
+  }
+
+  .hero-image{
+    min-height:390px;
+  }
+
+  .section{
+    padding:65px 5%;
+  }
+
+  .product-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:14px;
+  }
+
+  .product-image{
+    height:260px;
+  }
+
+  .product-info{
+    padding:14px;
+  }
+
+  .product-info h3{
+    font-size:19px;
+  }
+
+  .product-bottom{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .order-btn{
+    width:100%;
+  }
+
+  .story{
+    grid-template-columns:1fr;
+  }
+
+  .story-image{
+    min-height:340px;
+  }
+
+  .story-copy{
+    padding:50px 7%;
+  }
+}
+
+@media(max-width:440px){
+  .product-grid{
+    grid-template-columns:1fr;
+  }
+
+  .product-image{
+    height:350px;
+  }
+
+  .section-heading{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .benefit{
+    padding:18px 6px;
+  }
+
+  .benefit strong{
+    font-size:10px;
+  }
+
+  .benefit span{
+    font-size:9px;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .modal-panel{
+    padding:22px 17px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="announcement">
+  Fashion • Footwear • Home Essentials &nbsp; | &nbsp; Nationwide Delivery
+</div>
+
+<header>
+  <nav class="nav">
+    <a href="#" class="logo">shopwith<span>iris</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      ☰
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop Collection</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+      <a href="#shop" class="nav-cta">EXPLORE COLLECTION</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+
+  <div class="hero-copy">
+    <div class="eyebrow">Your style, elevated</div>
+
+    <h1>Elevating your <em>everyday</em> style.</h1>
+
+    <p>
+      Discover fashion and lifestyle essentials selected to bring
+      quality, confidence and effortless style into your everyday life.
+    </p>
+
+    <div class="button-row">
+      <a href="#shop" class="btn btn-dark">EXPLORE THE COLLECTION ↗</a>
+      <a href="#about" class="btn btn-outline">DISCOVER OUR BRAND</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-label">
+      <small>Style • Quality • Affordability</small>
+      <strong>Your everyday essentials.</strong>
+    </div>
+  </div>
+
+</section>
+
+<section class="benefits">
+  <div class="benefit">
+    <strong>CURATED STYLE</strong>
+    <span>Fashion worth discovering</span>
+  </div>
+
+  <div class="benefit">
+    <strong>QUALITY FIRST</strong>
+    <span>Style meets everyday living</span>
+  </div>
+
+  <div class="benefit">
+    <strong>NATIONWIDE DELIVERY</strong>
+    <span>Ask us about delivery options</span>
+  </div>
+</section>
+
+<section class="section" id="shop">
+
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">The Shopwithiris edit</div>
+      <h2>Find your next favourite.</h2>
+    </div>
+
+    <p>
+      Explore our featured collection. Found something you love?
+      Message us directly to confirm availability and place your order.
+    </p>
+  </div>
+
+  <input
+    class="search-box"
+    id="searchInput"
+    type="search"
+    placeholder="Search products..."
+    aria-label="Search products"
+  >
+
+  <div class="filters">
+    <button class="filter-btn active" data-category="All">All Products</button>
+    <button class="filter-btn" data-category="Footwear">Footwear</button>
+    <button class="filter-btn" data-category="Clothing">Clothing</button>
+    <button class="filter-btn" data-category="Home Essentials">Home Essentials</button>
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+
+</section>
+
+<section class="story" id="about">
+
+  <div class="story-image"></div>
+
+  <div class="story-copy">
+    <div class="eyebrow">A little about us</div>
+
+    <h2>Good style should feel effortless.</h2>
+
+    <p>
+      Shopwithiris brings together fashion and everyday essentials
+      for customers who appreciate quality, style and affordability.
+      Our goal is to make discovering your next favourite item simple
+      and enjoyable.
+    </p>
+
+    <p>
+      Browse the collection, contact us on WhatsApp and let us help
+      you find what you're looking for.
+    </p>
+
+    <a href="#shop" class="btn btn-dark">SHOP THE COLLECTION ↗</a>
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="eyebrow">We're just a message away</div>
+
+  <h2>Let's find your style.</h2>
+
+  <p>
+    Questions about sizes, product availability, pricing or delivery?
+    Send us a WhatsApp message and we'll help you with your order.
+  </p>
+
+  <a
+    href="https://wa.me/2348134756916"
+    target="_blank"
+    rel="noopener"
+    class="btn"
+  >
+    CHAT WITH US ON WHATSAPP ↗
+  </a>
+
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div>
+      <div class="footer-brand">shopwith<span>iris</span></div>
+      <div class="footer-small">
+        Fashion & Home Essentials
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="https://wa.me/2348134756916" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+
+    <div class="footer-small">
+      © <span id="year"></span> Shopwithiris. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+<!-- Owner dashboard entry -->
+<button class="admin-launch" id="ownerAccess">
+  OWNER ACCESS
+</button>
+
+<!-- Owner dashboard modal -->
+<div class="modal" id="ownerModal">
+  <div class="modal-panel">
+
+    <button class="close-modal" id="closeOwner" aria-label="Close">×</button>
+
+    <div id="loginSection">
+      <div class="eyebrow">Store management</div>
+      <h2>Owner Access</h2>
+      <p>Sign in to manage the product catalogue on this device.</p>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="ownerPassword">Owner password</label>
+          <input
+            type="password"
+            id="ownerPassword"
+            required
+            autocomplete="current-password"
+            placeholder="Enter owner password"
+          >
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">SIGN IN</button>
+          <button type="button" class="secondary" id="cancelLogin">CANCEL</button>
+        </div>
+      </form>
+
+      <div class="notice">
+        Demonstration mode: the password and product data are stored
+        in browser-side code/storage. This is not secure for a live
+        commercial store. Use server-side authentication before launch.
+      </div>
+    </div>
+
+    <div id="dashboardSection" hidden>
+
+      <div class="eyebrow">Private catalogue management</div>
+      <h2>Manage Products</h2>
+      <p>Add products and update the catalogue shown on this device.</p>
+
+      <form id="productForm">
+
+        <div class="form-group">
+          <label for="productName">Product name</label>
+          <input id="productName" required maxlength="100" placeholder="e.g. Classic Leather Loafers">
+        </div>
+
+        <div class="form-group">
+          <label for="productCategory">Category</label>
+          <select id="productCategory" required>
+            <option value="Footwear">Footwear</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Home Essentials">Home Essentials</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="productPrice">Price in Nigerian Naira (NGN)</label>
+          <input id="productPrice" type="number" min="0" step="1" placeholder="Leave empty if price is unconfirmed">
+        </div>
+
+        <div class="form-group">
+          <label for="productDescription">Description</label>
+          <textarea id="productDescription" rows="3" maxlength="500" placeholder="Describe the product"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="productImage">Product image URL</label>
+          <input id="productImage" type="url" placeholder="https://example.com/product.jpg">
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">ADD PRODUCT</button>
+          <button type="button" class="secondary" id="logoutButton">LOG OUT</button>
+        </div>
+
+      </form>
+
+      <div class="admin-products">
+        <h3>Current Products</h3>
+        <div id="adminProductList"></div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/*
+=========================================================
+SHOPWITHIRIS STOREFRONT
+=========================================================
+
+DEMO SETTINGS:
+1. Change DEMO_OWNER_PASSWORD before testing.
+2. This is NOT secure authentication.
+3. Products are saved in this browser using localStorage.
+4. For a real live store, connect a secure backend, database,
+   server-side owner authentication and shared image storage.
+=========================================================
+*/
+
+const WHATSAPP_NUMBER = "2348134756916";
+
+// DEMONSTRATION ONLY: this password is visible in the source code.
+// Replace it during testing, but do not use this method for production.
+const DEMO_OWNER_PASSWORD = "CHANGE_THIS_PASSWORD";
+
+const starterProducts = [
+  {
+    id: "iris-001",
+    name: "Givenchy Loafers",
+    category: "Footwear",
+    price: null,
+    description: "A sophisticated footwear choice for a polished look. Contact us to confirm availability and pricing.",
+    image: "https://images.unsplash.com/photo-1531310197839-ccf54634509e?auto=format&fit=crop&w=900&q=85",
+    tag: "Featured"
+  },
+  {
+    id: "iris-002",
+    name: "Armless Shirts",
+    category: "Clothing",
+    price: null,
+    description: "A versatile sleeveless style for easy everyday dressing. Message us for available styles and prices.",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
+    tag: "Everyday Style"
+  },
+  {
+    id: "iris-003",
+    name: "Men's Luxury Mules",
+    category: "Footwear",
+    price: 75000,
+    description: "A luxury-inspired footwear option for men. Contact us to confirm sizes and availability.",
+    image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=900&q=85",
+    tag: "Popular"
+  }
+];
+
+let products = loadProducts();
+let selectedCategory = "All";
+
+function loadProducts(){
+  try{
+    const saved = localStorage.getItem("shopwithiris_products");
+
+    if(saved){
+      const parsed = JSON.parse(saved);
+
+      if(Array.isArray(parsed)){
+        return parsed;
+      }
+    }
+  }catch(error){
+    console.warn("Could not load saved products.", error);
+  }
+
+  return starterProducts.map(product => ({...product}));
+}
+
+function saveProducts(){
+  try{
+    localStorage.setItem("shopwithiris_products", JSON.stringify(products));
+  }catch(error){
+    showToast("Could not save products in this browser.");
+  }
+}
+
+function escapeHTML(value){
+  return String(value ?? "").replace(/[&<>"']/g, character => ({
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#39;"
+  }[character]));
+}
+
+function formatPrice(price){
+  if(price === null || price === undefined || price === ""){
+    return "Contact for price";
+  }
+
+  const amount = Number(price);
+
+  if(!Number.isFinite(amount)){
+    return "Contact for price";
+  }
+
+  return "₦" + amount.toLocaleString("en-NG");
+}
+
+function renderProducts(){
+  const grid = document.getElementById("productGrid");
+  const search = document.getElementById("searchInput").value
+    .trim()
+    .toLowerCase();
+
+  const filtered = products.filter(product => {
+    const matchesCategory =
+      selectedCategory === "All" ||
+      product.category === selectedCategory;
+
+    const matchesSearch =
+      (product.name || "").toLowerCase().includes(search) ||
+      (product.description || "").toLowerCase().includes(search) ||
+      (product.category || "").toLowerCase().includes(search);
+
+    return matchesCategory && matchesSearch;
+  });
+
+  if(filtered.length === 0){
+    grid.innerHTML = `
+      <div class="no-products">
+        No products found. Try another search or category.
+      </div>
+    `;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(product => {
+    const name = escapeHTML(product.name);
+    const category = escapeHTML(product.category);
+    const description = escapeHTML(product.description);
+    const price = formatPrice(product.price);
+    const tag = escapeHTML(product.tag || "Shop Collection");
+
+    // Only accept secure remote image URLs.
+    let image = "";
+
+    try{
+      const parsedURL = new URL(product.image);
+
+      if(parsedURL.protocol === "https:"){
+        image = parsedURL.href;
+      }
+    }catch(error){
+      image = "";
+    }
+
+    const safeImage = escapeHTML(image);
+
+    const imageHTML = image
+      ? `<img src="${safeImage}" alt="${name}" loading="lazy"
+             onerror="this.style.display='none'">`
+      : "";
+
+    return `
+      <article class="product-card">
+
+        <div class="product-image">
+          ${imageHTML}
+          <span class="product-tag">${tag}</span>
+        </div>
+
+        <div class="product-info">
+          <div class="product-category">${category}</div>
+          <h3>${name}</h3>
+
+          <p class="product-description">${description}</p>
+
+          <div class="product-bottom">
+            <div class="price">${price}</div>
+
+            <button
+              class="order-btn"
+              data-order="${escapeHTML(product.id)}"
+            >
+              ORDER ON WHATSAPP ↗
+            </button>
+          </div>
+        </div>
+
+      </article>
+    `;
+  }).join("");
+}
+
+function createOrderMessage(product){
+  return [
+    "Hello Shopwithiris!",
+    "",
+    "I would like to enquire about:",
+    product.name,
+    "Category: " + product.category,
+    "Listed price: " + formatPrice(product.price),
+    "",
+    "Please confirm availability and delivery details."
+  ].join("\n");
+}
+
+document.getElementById("productGrid").addEventListener("click", event => {
+  const button = event.target.closest("[data-order]");
+
+  if(!button) return;
+
+  const product = products.find(item => item.id === button.dataset.order);
+
+  if(!product) return;
+
+  const message = encodeURIComponent(createOrderMessage(product));
+
+  window.open(
+    "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message,
+    "_blank",
+    "noopener"
+  );
+});
+
+document.querySelectorAll(".filter-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach(item => {
+      item.classList.remove("active");
+    });
+
+    button.classList.add("active");
+    selectedCategory = button.dataset.category;
+
+    renderProducts();
+  });
+});
+
+document.getElementById("searchInput").addEventListener("input", renderProducts);
+
+const ownerModal = document.getElementById("ownerModal");
+const loginSection = document.getElementById("loginSection");
+const dashboardSection = document.getElementById("dashboardSection");
+
+document.getElementById("ownerAccess").addEventListener("click", () => {
+  ownerModal.classList.add("open");
+  loginSection.hidden = false;
+  dashboardSection.hidden = true;
+});
+
+document.getElementById("closeOwner").addEventListener("click", closeOwnerModal);
+document.getElementById("cancelLogin").addEventListener("click", closeOwnerModal);
+
+ownerModal.addEventListener("click", event => {
+  if(event.target === ownerModal){
+    closeOwnerModal();
+  }
+});
+
+function closeOwnerModal(){
+  ownerModal.classList.remove("open");
+}
+
+document.getElementById("loginForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const enteredPassword = document.getElementById("ownerPassword").value;
+
+  if(DEMO_OWNER_PASSWORD === "CHANGE_THIS_PASSWORD"){
+    showToast("Set a demonstration password in the HTML first.");
+    return;
+  }
+
+  if(enteredPassword !== DEMO_OWNER_PASSWORD){
+    showToast("Incorrect password.");
+    return;
+  }
+
+  loginSection.hidden = true;
+  dashboardSection.hidden = false;
+
+  document.getElementById("ownerPassword").value = "";
+
+  renderAdminProducts();
+  showToast("Demonstration dashboard opened.");
+});
+
+document.getElementById("logoutButton").addEventListener("click", () => {
+  loginSection.hidden = false;
+  dashboardSection.hidden = true;
+  showToast("You have logged out.");
+});
+
+document.getElementById("productForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const name = document.getElementById("productName").value.trim();
+  const category = document.getElementById("productCategory").value;
+  const priceText = document.getElementById("productPrice").value.trim();
+  const description = document.getElementById("productDescription").value.trim();
+  const image = document.getElementById("productImage").value.trim();
+
+  if(!name){
+    showToast("Enter a product name.");
+    return;
+  }
+
+  if(image){
+    try{
+      if(new URL(image).protocol !== "https:"){
+        showToast("Use a secure HTTPS image URL.");
+        return;
+      }
+    }catch(error){
+      showToast("Enter a valid image URL.");
+      return;
+    }
+  }
+
+  const price = priceText === "" ? null : Number(priceText);
+
+  if(price !== null && (!Number.isFinite(price) || price < 0)){
+    showToast("Enter a valid price.");
+    return;
+  }
+
+  const product = {
+    id: "iris-" + Date.now(),
+    name,
+    category,
+    price,
+    description: description || "Contact us for more information.",
+    image,
+    tag: "New Arrival"
+  };
+
+  products.unshift(product);
+
+  saveProducts();
+  renderProducts();
+  renderAdminProducts();
+
+  document.getElementById("productForm").reset();
+
+  showToast("Product added on this device.");
+});
+
+function renderAdminProducts(){
+  const list = document.getElementById("adminProductList");
+
+  if(products.length === 0){
+    list.innerHTML = "<p>No products have been added yet.</p>";
+    return;
+  }
+
+  list.innerHTML = products.map(product => `
+    <div class="admin-product">
+      <div>
+        <strong>${escapeHTML(product.name)}</strong><br>
+        <span>${escapeHTML(product.category)} · ${formatPrice(product.price)}</span>
+      </div>
+
+      <button
+        class="delete-btn"
+        data-delete="${escapeHTML(product.id)}"
+      >
+        REMOVE
+      </button>
+    </div>
+  `).join("");
+}
+
+document.getElementById("adminProductList").addEventListener("click", event => {
+  const button = event.target.closest("[data-delete]");
+
+  if(!button) return;
+
+  const product = products.find(item => item.id === button.dataset.delete);
+
+  if(!product) return;
+
+  const confirmed = confirm("Remove " + product.name + " from this device's catalogue?");
+
+  if(!confirmed) return;
+
+  products = products.filter(item => item.id !== button.dataset.delete);
+
+  saveProducts();
+  renderProducts();
+  renderAdminProducts();
+
+  showToast("Product removed from this device.");
+});
+
+document.getElementById("menuToggle").addEventListener("click", () => {
+  document.getElementById("navLinks").classList.toggle("open");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navLinks").classList.remove("open");
+  });
+});
+
+let toastTimer;
+
+function showToast(message){
+  const toast = document.getElementById("toast");
+
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(toastTimer);
+
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+renderProducts();
+</script>
+
+</body>
+</html>
